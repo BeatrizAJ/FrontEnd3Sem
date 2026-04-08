@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+/* Deixar com largura de 920px e 
+altura de 880px
+caixa centralizada   */
+
+/* Opcao 1  
+body{
+    display: flex;
+    justify-content: center;
+} */
+
+.mamae__filhinho{
+    width: 920px;
+    height: 880px;
+    /* OPCAO 2  */
+    margin: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px dashed blue;
+}
+
+
+/* Deixar em coluna e centralizada nos dois eixos */
+.filhinho--azul {
+    background-color: aqua;
+    color: white;
+}
