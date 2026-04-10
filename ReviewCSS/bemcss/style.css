@@ -54,8 +54,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    border: 1px solid white;
-    background-color: rgb(161, 90, 196);
+    /*border: 1px solid white;*/
+    background-color: rgb(220,220,220);
 }
 
 .card-perfil__image
