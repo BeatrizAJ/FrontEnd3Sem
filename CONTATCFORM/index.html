@@ -11,9 +11,9 @@
 <body>
     <header class="header">
         <div class="container  container--flex--column">
-            <img class="header__logo" src="./images/mdi_drivers-license-outline.svg" alt="">
+            <img class="header__logo" src="./mdi_drivers-license-outline (1).svg" alt="">
             <h1 class="header__title">Contact Form</h1>
-            <p class="header__text">Insira os dados do contato e clique em cadastar1</p>
+            <p class="header__text">Insira os dados do contato e clique em cadastar!</p>
         </div>
     </header>
 
@@ -26,33 +26,86 @@
                     </div>
 
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input  contact-form__input--metade" 
-                                name="nome" 
-                                id="nome" 
-                                type="text"
-                                placeholder="Nome"
-                                >
+                        <input class="contact-form__input  contact-form__input--metade" name="nome" id="nome"
+                            type="text" placeholder="Nome">
 
-                        <input class="contact-form__input  contact-form__input--metade" 
-                                    name="nome" 
-                                    id="sobrenome" 
-                                    type="text"
-                                    placeholder="Sobrenome"
-                                    >
+                        <input class="contact-form__input  contact-form__input--metade" name="nome" id="sobrenome"
+                            type="text" placeholder="Sobrenome">
                     </div>
                 </div>
 
-                         <!-- criar a linha do email -->
-                           
-   <div class="contact-form__col-b">
-                        <input class="contact-form__input  contact-form__input--metade" 
-                                name="nome" 
-                                id="nome" 
-                                type="text"
-                                placeholder="E-mail"
-                                >
-                    </div>
-            </form>
+                <!-- criar a linha do email -->
+
+        </div>
+        <div class="contact-form__linha">
+            <div class="contact-form__col-a">
+                <label class="contact-form__label" for="email">E-mail:</label>
+            </div>
+            <div class="contact-form__col-b">
+                <input class="contact-form__input contact-form__input--maximo" name="email" id="email" type="email"
+                    placeholder="E-mail">
+            </div>
+        </div>
+        <div class="contact-form__linha">
+            <div class="contact-form__col-a">
+                <label class="contact-form__label" for="algo">Telefone</label>
+            </div>
+            <div class="contact-form__col-b">
+                <input class="contact-form__input   contact-form__input--tres" name="Telefone" id="Telefone"
+                    type="Telefone" placeholder="+55">
+                <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
+                    type="Telefone" placeholder="DDD">
+                <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
+                    type="Telefone" placeholder="Ex: 66666-6666">
+            </div>
+        </div>
+        <div class="contact-form__linha">
+            <div class="contact-form__col-a">
+                <label class="contact-form__label" for="algo">Endereço</label>
+            </div>
+            <div class="contact-form__col-b">
+                <input class="contact-form__input contact-form__input--dois" name="endereco" id="endereco" type="text"
+                    placeholder="Cep:6666-666">
+                <input class="contact-form__input contact-form__input--metade" name="endereco" id="endereco" type="text"
+                    placeholder="Rua lá De Casa">
+                <input class="contact-form__input contact-form__input--tres" name="endereco" id="endereco" type="text"
+                    placeholder="Ex: 666">
+            </div>
+        </div>
+        <div class="contact-form__linha">
+            <div class="contact-form__col-a">
+                <label class="contact-form__label" for="AP"></label>
+            </div>
+            <div class="contact-form__col-b">
+                <input class="contact-form__input   contact-form__input--tres" name="AP" id="AP" type="AP"
+                    placeholder="Apto. 12 Bloco X">
+                <input class="contact-form__input contact-form__input--tres" name="AP" id="AP" type="AP"
+                    placeholder="Bairro">
+                <input class="contact-form__input contact-form__input--tres" name="AP" id="AP" type="AP"
+                    placeholder="Cidade">
+            </div>
+        </div>
+        <div class="contact-form__linha">
+            <div class="contact-form__col-a">
+                <label class="contact-form__label" for="algo"></label>
+            </div>
+            <div class="contact-form__col-b">
+                <input class="contact-form__input contact-form__input--tres" name="Estado" id="Estado" type="Estado"
+                    placeholder="Estado">
+            </div>
+        </div>
+
+
+        <div class="contact-form__linha">
+            <div class="contact-form__col-a">
+                <label class="contact-form__label" for="AP">Anotações</label>
+            </div>
+            <div class="contact-form__col-b">
+                <textarea class="Textarea" name="Message" id="" placeholder="Escreva Algo"></textarea>
+            </div>
+        </div>
+        </div>
+        </form>
         </div>
     </main>
 </body>
