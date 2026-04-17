@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "nome": "Beatriz",
+      "sobrenome": "andrade",
+      "email": "biaa@gmail.com",
+      "id": "N4nsrQuDUCw"
+    },
+    {
+      "nome": "giulia",
+      "sobrenome": "marzano",
+      "email": "giu@gmail.com",
+      "id": "AVuwKYnI99U"
+    },
+    {
+      "nome": "mayra",
+      "sobrenome": "aparecida",
+      "email": "may@gmail.com",
+      "id": "d3hfjZmXhZ4"
+    },
+    {
+      "nome": "diogo",
+      "sobrenome": "aldrovani",
+      "email": "diogo@gmail.com",
+      "id": "PlC5BE9EFP0"
+    }
+  ],
+  "produto": [
+    {
+      "nome": "banana",
+      "preco": "5,00",
+      "quantidade": "1",
+      "id": "7Vtwgj_Sj_g"
+    },
+    {
+      "nome": "maca",
+      "preco": "2,00",
+      "quantidade": "3",
+      "id": "0hQFI4KEB5s"
+    },
+    {
+      "nome": "uva",
+      "preco": "4,00",
+      "quantidade": "2",
+      "id": "E6MAopmgjUE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
