@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title> 
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pegar Elemento Pelo Id</title>
-</head>
+    <body>
+        <h1 id="titulo">Bem Vindo</h1>
+        <p>Hello DOM JS</p>
+        <button onclick="saudacao();">Click em mim!</button>
+        <button ondblclick="mouseClicarDuasVezes();">Click 2 Vezes!</button>
+        <button onmouseup="saudacao();">Click em mim!</button>
+        <button onmousedown="saudacao();">Click em mim!</button>
+        <button onmouseover="saudacaoLegal();">Passe o Mouse</button>
 
-<body>
-    <input type="text" id="nome">
-    <input type="text" id="sobrenome">
-    <button onclick="juntarNome();">Nome e Sobrenome</button>
+        <script>
+            alert(`Titulo: ${document.getElementById("titulo").textContent}`)
 
-    <script>
-        function juntarNome() {
-            const nome = window.document.getElementById("nome");
-            let sobrenome = document.getElementById("sobrenome").value;
+            // JavaScript é uma linguagem Case Sensitive, 
+            // por convernção, utilizamos o padrão Camel Case 
+            // - Maiúsculo a partir da segunda palavra
+            function saudacao(){
+                alert("Hello World!")
+            }
+            
+            function saudacaoLegal(){
+                alert("Dul, set, Bangtan! Annyeonghaseyo, Bangtan Sonyeondan imnida")
+            }
 
-            console.log(nome);
-            console.log(nome.value);
-            console.log(nome.id);
-            nome.value = "BEATRIZ"
-        }
-    </script>
-</body>
-
+            function mouseClicarDuasVezes(){
+                alert("mouseClicarDuasVezes")
+            }
+        </script>
+    </body>
 </html>

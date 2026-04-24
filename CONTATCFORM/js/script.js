@@ -162,8 +162,6 @@ function reiniciaBorder(fildId) {
 
 function cadastrarContato(objetoContato) {
     console.log(objetoContato);
-
-
 }
 
 
