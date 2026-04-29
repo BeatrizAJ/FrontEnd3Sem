@@ -23,22 +23,22 @@ const objIMC = {
     IMC : IMC,
     situacao : textoSituacao
 };
-
-
-
-
-
              
 const retorno = cadastrarNaAPI(objIMC);
 
 if(retorno){
-     const tabela = document.getElementById("cadastro");
+    buscarIMCs();
 
-    tabela.innerHTML += `<td>${nome}</td>
-     <td>${altura}</td>
-     <td>${peso}</td>
-     <td>${IMC.toFixed(2)}</td>
-     <td>${textoSituacao}</td>`;
+    document.getElementById("nome").value = "";
+    document.getElementById("altura").value = "";
+    document.getElementById("peso").value = "";
+    //  const tabela = document.getElementById("cadastro");
+
+    // tabela.innerHTML += `<td>${nome}</td>
+    //  <td>${altura}</td>
+    //  <td>${peso}</td>
+    //  <td>${IMC.toFixed(2)}</td>
+    //  <td>${textoSituacao}</td>`;
 
     document.getElementById("nome").value = "";
     document.getElementById("altura").value = "";
@@ -118,10 +118,10 @@ async function buscarIMCs(){
        const retorno = await fetch("http://localhost:3000/imc");
        const dadosRetornados = await retorno.json();
 
-       console.log(dadosRetornados);
+    // console.log(dadosRetornados);
 
        const tabela = document.getElementById("cadastro");
-
+       let template = "";
 
        for (let i = 0; i < dadosRetornados.length; i++) {
 

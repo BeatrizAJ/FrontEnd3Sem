@@ -86,6 +86,37 @@
       "IMC": 30.477966223242138,
       "textoSituacao": "Obesidade Grau I",
       "id": "utx1Ec1A93E"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "IMC": 30.477966223242138,
+      "situacao": "Obesidade Grau I",
+      "id": "88ljK_lWwpI"
+    }
+  ],
+  "calculadora": [
+    {
+      "n1": 2,
+      "n2": 2,
+      "op": "soma",
+      "resultado": "4.00",
+      "id": "29RVDHY_hGc"
+    },
+    {
+      "n1": 4,
+      "n2": -3,
+      "op": "subtracao",
+      "resultado": "7.00",
+      "id": "xqTZkipVZy8"
+    },
+    {
+      "n1": 11,
+      "n2": 37,
+      "op": "divisao",
+      "resultado": "0.30",
+      "id": "EoE5XisjnsA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
